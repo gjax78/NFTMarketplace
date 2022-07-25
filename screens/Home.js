@@ -6,8 +6,7 @@ import { NFTCard, HomeHeader, FocusedStatusBar } from '../components'
 export default function Home() {
   return (
    <SafeAreaView style={{ flex: 1 }}>
-    <Text>Hi</Text>
-
+    <FocusedStatusBar background={COLORS.primary}/>
    </SafeAreaView>
   )
 }
