@@ -6,13 +6,13 @@ import Details from "./screens/Details";
 import { useFonts } from "expo-font";
 import { createStackNavigator } from "@react-navigation/stack";
 
-// const theme = {
-//   ...DefaultTheme,
-//   colors: {
-//     ...DefaultTheme.colors,
-//     background: "transparent",
-//   },
-// };
+const theme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    background: "transparent",
+  },
+};
 
 const Stack = createStackNavigator();
 
@@ -28,7 +28,7 @@ const App = () => {
   if (!loaded) return null;
 
   return (
-    <NavigationContainer >
+    <NavigationContainer theme={theme}>
       <Stack.Navigator screenOptions={{
       headerShown: false}}
       initialRouteName="Home">
